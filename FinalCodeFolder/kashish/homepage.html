@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <head>
+    <style>
+      body {
+        background-color: white;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+      }
+      .search-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: #056270;
+        box-shadow: 0 2px 4px rgba(151, 106, 106, 0.1);
+      }
+      .search-input {
+        display: flex;
+        align-items: center;
+        background-color: #e5e7eb;
+        border-radius: 9999px;
+        padding: 8px 12px;
+        width: 90%;
+        max-width: 200px;
+      }
+      .search-input input {
+        background: transparent;
+        border: none;
+        outline: none;
+        margin-left: 8px;
+        width: 100%;
+      }
+      .icons {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        color: white;
+        padding-left: 15px;
+      }
+      
+      .icons a{
+        color: white;
+      }
+
+
+      .categories {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        padding: 16px;
+        cursor: pointer;
+      }
+      .category {
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px rgba(151, 106, 106, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .category img {
+        width: 100%;
+        height: 110px;
+        object-fit: cover;
+      }
+      .category div {
+        background-color:#3ea7b8;
+        color: #ffffff;
+        text-align: center;
+        padding: 8px 0;
+      }
+      .bottom-nav {
+        background-color:#ffffff ;
+        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        padding: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+      }
+      .nav-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .nav-item i {
+        color:#056270;
+      }
+
+      .nav-item a{
+        text-decoration: none;
+      }
+
+      .nav-item span {
+        font-size: 10px;
+        color: #000000;
+        font-family:Arial, Helvetica, sans-serif
+        
+      }
+      /* .sell-button {
+        background-color: #9f9f9f;
+        color: white;
+        border-radius: 99px;
+        padding: 16px;
+      } */
+      .sell-button i {
+        font-size: 19px;
+        color:#3ea7b8;
+      }
+    </style>
+    <!-- icons link -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+          rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- Search Bar and Icons --> 
+    <div class="search-bar">
+      <div class="search-input">
+        <i class="fas fa-search text-gray"></i>
+        <input type="text" placeholder="Search Products"/>
+      </div>
+      <div class="icons">
+        <a href="/STATIONA-RE/Notification.html"><i class="fas fa-bell text-gray"></i></a>
+        <a href="/STATIONA-RE/cartALTER.html"><i class="fas fa-shopping-cart text-gray"></i></a>
+      </div>
+    </div>
+    <!-- Divider Lines -->
+    <div style="margin-left: 20px; padding-top: 0px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+      <H2 style=" margin-bottom: 2%; color: #056270;" >Buy it. Rent it. Sell it.</H2>
+        Your stationery, your way!
+        <br>Less clutter, more creativity.
+      </div>
+    <!-- Categories -->
+    <div class="categories">
+      <div class="category">
+        <img src="images/3d-rendering-wood-logs_23-2151340161.jpg" alt="Materials category image"/>
+        <div>Materials</div>
+      </div>
+      <div class="category">
+        <img src="images/electronics.jpg" alt="Electronics category image"/>
+        <div>Electronics</div>
+      </div>
+      <div class="category">
+        <img src="images/sewing mach.jpg" alt="Rent category image"/>
+        <div>Rent</div>
+      </div>
+      <div class="category">
+        <img src="images/201907249815.jpeg" alt="Miscellaneous category image"/>
+        <div>Miscellaneous</div>
+      </div>
+    </div>
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+      <div class="nav-item" >
+        <a href="homepage.html" > <i class="fas fa-home" style="padding-bottom: 5px; padding-left: 5px;"></i> </a>
+        
+        <span style="padding-left: 5px;" >  Home</span>
+      </div>
+      <div class="nav-item">
+       <a href="/STATIONA-RE/ChatPage.html"> <i class="fas fa-comments" style="padding-bottom: 5px;"></i></a>
+        
+        <span>Chat</span>
+      </div>
+      <div class="nav-item">
+        <div class="sell-button">
+          <a href="/STATIONA-RE/shydanda/include details.html"><i class="fas fa-plus" style="padding-bottom: 5px;"></i></a>
+        </div>
+        <span>Sell</span>
+      </div>
+      <div class="nav-item">
+        <a href="/STATIONA-RE/vridhi folder/STATIONARE/PRODUCTPAGE.html"><i class="fas fa-box" style="padding-bottom: 5px;"></i></a>
+        <span>Products</span>
+      </div>
+      <div class="nav-item">
+        <a href="/STATIONA-RE/profile.html"> <i class="fas fa-user" style="padding-bottom: 5px; padding-right: 5px;"></i></a>
+        <span style="padding-right: 5px;">Profile</span>
+      </div>
+    </div>
+  </body>
+  </html>

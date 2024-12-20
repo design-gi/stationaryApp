@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-color: white;
+        }
+        .header {
+            padding: 1rem;
+            border-bottom: 1px solid #ffffff;
+            background-color: #056270;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #fff;
+        }
+        .tabs {
+            margin-top: 1rem;
+        }
+        .tabs a {
+            padding-left: 10px ;
+            margin: 9px;
+            border: 1px solid #dee2e6;
+            background-color: #3ea7b8;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+        .chat-list {
+            margin-top: 1rem;
+        }
+        .chat-item {
+            padding: 1rem;
+            border-bottom: 1px solid #3ea7b8;
+            display: flex;
+            align-items: center;
+        }
+        .chat-item img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .chat-item .divider {
+            margin-left: 1rem;
+            flex: 1;
+            border-bottom: 1px solid #3ea7b8;
+        }
+        .bottom-nav {
+            background-color: white;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .nav-item i {
+            color: #056270;
+        }
+
+        .nav-item span {
+            font-size: 12px;
+            color: #000;
+        }
+
+        .sell-button i {
+            font-size: 17px;
+            color: #3ea7b8;
+        }
+
+
+        
+    body {
+      padding-bottom: 65px; /* Prevents content from being hidden under the nav */
+    }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header d-flex justify-content-between align-items-center">
+        <a href="/STATIONA-RE/FinalCodeFolder/FinalCodeFolder/ChatPage.html"><i class="fas fa-arrow-left" style="color: #fff;"></i></a>
+        <h1>Chat</h1>
+        <div></div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs d-flex justify-content-center">
+        <a href="/STATIONA-RE/FinalCodeFolder/ChatPage.html" class="btn">ALL</a>
+        <a href="sell.html" class="btn">SELL</a>
+        <a href="buy.html" class="btn">BUY</a>
+    </div>
+
+    <!-- Chat List -->
+    <div class="chat-list">
+        <div class="chat-item">
+            <img src="Images/brushPen.jpg" alt="User Image">
+            <div class="divider"> Vridhi Kawad</div>
+        </div>
+        <div class="chat-item">
+            <img src="Images/girl2.jpg" alt="User Image">
+            <div class="divider"> Kashish Mangal</div>
+        </div>
+        <div class="chat-item">
+            <img src="Images/girl3.jpg" alt="User Image">
+            <div class="divider"> Pratiksha Ramesh</div>
+        </div>
+        <div class="chat-item">
+            <img src="Images/boy1.jpg" alt="User Image">
+            <div class="divider"> Schaden Da Gama</div>
+        </div>
+        <div class="chat-item">
+            <img src="Images/cotton.jpg" alt="User Image">
+            <div class="divider">Srishti Kamat</div>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+<div class="bottom-nav">
+    <div class="nav-item">
+        <a href="productListing1.html"><i class="fas fa-home"></i></a>
+        <span>Home</span>
+    </div>
+    <div class="nav-item">
+        <a href="/STATIONA-RE/FinalCodeFolder/ChatPage.html"><i class="fas fa-comments"></i></a>
+        <span>Chat</span>
+    </div>
+    <div class="nav-item">
+        <div class="sell-button">
+            <a href="/STATIONA-RE/FinalCodeFolder/shydanda/include details.html"><i class="fas fa-plus"></i></a>
+        </div>
+        <span>Sell</span>
+    </div>
+    <div class="nav-item">
+       <a href="/STATIONA-RE/FinalCodeFolder/vridhi folder/STATIONARE/PRODUCTPAGE.html"> <i class="fas fa-box"></i></a>
+        <span>Products</span>
+    </div>
+    <div class="nav-item">
+        <a href="/STATIONA-RE/FinalCodeFolder/profile.html"><i class="fas fa-user"></i></a>
+        <span>Profile</span>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

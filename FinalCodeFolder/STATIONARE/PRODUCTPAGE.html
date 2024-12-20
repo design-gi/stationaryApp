@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 10px;
+         
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: #056270;
+            
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+            color: #ffffff;
+        }
+        .header i {
+            font-size: 15px;
+            color: #ffffff;
+            margin-left: 15px;
+        }
+        .header h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            margin: 0;
+            flex-grow: 1;
+            text-align: center;
+        }
+        
+        .box {
+            background-color: #e0e0e0;
+            padding: 10px;
+            text-align: center;
+        }
+        .small-box {
+            height: 150px;
+            margin-bottom: 15px;
+            background-color: rgb(196, 196, 196);
+            border-radius: 5px;
+            width: 100px;
+            padding: 0%;
+            margin-left: 4px;
+            
+        }
+        .large-box {
+            height: 315px;
+            width: 150px;
+            margin-left: -30px;
+            background-color: #cccbcb;
+            border-radius: 5px;
+            padding: 0%;
+            
+        }
+        .bottom-nav {
+      background-color: white;
+      box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      display: flex;
+      justify-content: space-between ;
+      align-items: center;
+      position: fixed; 
+      bottom: 0; 
+      left: 0;
+      width: 100%; 
+      z-index: 1000; 
+    }
+
+    .nav-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .nav-item i {
+      color: #056270;
+    }
+
+    .nav-item span {
+      font-size: 12px;
+      color: #000000;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .sell-button i {
+      font-size: 17px;
+      color:#3ea7b8 ;
+    }
+    body {
+      padding-bottom: 65px; /* Prevents content from being hidden under the nav */
+    }
+             .rounded-box {
+            border: 1px solid #056270;
+            border-radius: 10px;
+            padding: 5px 50px;
+            font-size: 16px;
+        }
+        .circle-icon {
+            border: 1px solid #056270;
+            border-radius: 50%;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            width: 40px;
+            height: 40px;
+        }
+        .row-content {
+            background-color: #ccc;
+            border-radius: 5px;
+            margin-bottom: 1px;
+            height: 300px;
+        }
+        .details {
+            padding: 10px;
+            font-weight: lighter;
+            font-family: Arial, Helvetica, sans-serif;
+            color: gray;
+        }
+        .small-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire box area */
+    border-radius: 5px; 
+   
+}
+.large-box img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire box area */
+    border-radius: 5px; 
+   
+}
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header Section -->
+        <div>
+            <div class="header"style="background-color:#056270">
+                <a href="/STATIONA-RE/FinalCodeFolder/productListing1.html"><i class="fas fa-arrow-left"></i></a>
+                <h1>Product Page</h1>
+            </div>
+
+           
+
+            <!-- Row Layout -->
+            <div class="row mt-3">
+                <div class="col-6">
+                    <div class="box small-box"><img src="Turqoise minimal stationary.jpg" alt=""></div>
+                    <div class="box small-box"><img src="turquoise minimal diary zoomed.jpg" alt=""></div>
+                </div>
+                <div class="col-6">
+                    <div class="box large-box"><img src="Make a collage of Turquoise stationary.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center"style="padding: 0px 0px 55px">
+            <!-- Input Field Column -->
+            <div class="col-3">
+                <input type="text" class="input-box" placeholder="Rs.1500">
+            </div>
+    
+            <!-- Spacer for gap -->
+            <div class="col"></div>
+    
+            <!-- Share Icon Column -->
+            <div class="col-auto">
+                <div class="circle-icon">
+                    <i class="fas fa-share-alt"style=color:#322e7b></i>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12"style="margin-top: -40px;">
+                <div class="row-content">
+                    <div class="details">Brand-new teal book set, completely unused and bought just 3 weeks ago! This stunning set includes 2 notebooks, paper clips, and pens, perfect for organizing your workspace or school supplies. </div>
+                </div>
+            </div>
+        </div>
+
+      
+        <!-- Add to Cart Button -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <a href="/STATIONA-RE/FinalCodeFolder/cartALTER.html" style="color: white;"><div class="row-content text-center py-3" style="height: 60px;background-color: #056270;color: #ffffff;">
+                    Add to cart</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chat Button -->
+        <div class="row mt-3">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="row-content d-flex align-items-center justify-content-center" style="width: 150px; height: 60px;background-color: #3ea7b8;color: #ffffff;">
+                    <span class="me-2"><i class="bi bi-info-circle"style="padding:5px"></i></span> Chat
+                </div>
+            </div>
+        </div>
+       
+<!-- Bottom Navigation -->
+<div class="bottom-nav">
+    <div class="nav-item" >
+      <a href="/STATIONA-RE/FinalCodeFolder/productListing1.html" > <i class="fas fa-home" style="padding-bottom: 5px; padding-left: 5px;"></i> </a>
+      
+      <span style="padding-left: 5px;" >  Home</span>
+    </div>
+    <div class="nav-item">
+     <a href="/STATIONA-RE/FinalCodeFolder/ChatPage.html"> <i class="fas fa-comments" style="padding-bottom: 5px;"></i></a>
+      
+      <span>Chat</span>
+    </div>
+    <div class="nav-item">
+      <div class="sell-button">
+        <a href="/STATIONA-RE/FinalCodeFolder/FinalCodeFolder/shydanda/include details.html"><i class="fas fa-plus" style="padding-bottom: 5px;"></i></a>
+      </div>
+      <span>Sell</span>
+    </div>
+    <div class="nav-item">
+      <a href="/STATIONA-RE/FinalCodeFolder/STATIONARE/PRODUCTPAGE.html"><i class="fas fa-box"></i>
+      </a>
+      <span>Products</span>
+    </div>
+    <div class="nav-item">
+      <a href="/STATIONA-RE/FinalCodeFolder/FinalCodeFolder/profile.html"> <i class="fas fa-user" style="padding-bottom: 5px; padding-right: 5px;"></i></a>
+      <span style="padding-right: 5px;">Profile</span>
+    </div>
+  </div>
+
+
+</body>
+</html>

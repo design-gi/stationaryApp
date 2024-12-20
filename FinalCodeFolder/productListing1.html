@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Design</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-top: 80px; /* Avoids content hiding under the navbar */
+            padding-bottom: 65px; /* Avoids content hiding under bottom nav */
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #056270;
+            box-shadow: 0 2px 4px rgba(151, 106, 106, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .search-input {
+            display: flex;
+            align-items: center;
+            background-color: #e5e7eb;
+            border-radius: 9999px;
+            padding: 4px 16px;
+            width: 90%;
+            max-width: 200px;
+        }
+
+        .search-input input {
+            background: transparent;
+            border: none;
+            outline: none;
+            margin-left: 8px;
+            width: 100%;
+        }
+
+        .icons {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+        }
+
+        .card-custom {
+            width: 110px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #3ea7b8;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin: 13px;
+            display: inline-block;
+        }
+
+        .placeholder-image {
+            position: relative;
+            height: 130px;
+           
+        }
+
+        .product-image {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+        }
+
+        
+
+        .card-text {
+            padding: 10px;
+            font-size: 14px;
+            color: #ffffff;
+        }
+
+        .card-text a{
+         text-decoration: none;
+        }
+
+        
+
+        .bottom-nav {
+            background-color: white;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .nav-item i {
+            color: #056270;
+        }
+
+        .nav-item span {
+            font-size: 12px;
+            color: #000;
+        }
+
+        .sell-button i {
+            font-size: 17px;
+            color: #3ea7b8;
+        }
+
+
+        body {
+      padding-bottom: 65px; /* Prevents content from being hidden under the nav */
+    }
+
+    </style>
+</head>
+<body>
+
+<!-- Search Bar -->
+<div class="search-bar">
+    <div class="search-input">
+        <i class="fas fa-search text-gray"></i>
+        <input type="text" placeholder="Search Products">
+    </div>
+    <div class="icons">
+        <a href="/STATIONA-RE/FinalCodeFolder/Notification.html" ><i class="fas fa-bell text-gray" style="color:#ffffff; padding-right: 5px;"></i></a>
+        <a href="cartALTER.html" style="text-decoration: none; color: #ffffff;"> <i class="fas fa-shopping-cart text-gray" ></i></a>
+    </div>
+</div>
+
+<!-- Divider Lines -->
+<div style="margin-left: 20px; padding-top: 0px; padding-bottom: 0px; font-family:Arial, Helvetica, sans-serif">
+  <H2 style=" margin-bottom: 2%; color: #056270;" ><b>Buy it. Rent it. Sell it.</b></H2>
+    <h6 style="font-size: 15px;">Your stationery, your way!
+      <br>Less clutter, more creativity.</h6>
+  </div><br>
+
+
+<div class="ms-1">
+  <!-- Card 1 -->
+  <div class="justify-content-center align-items-center" style="display: inline-block;">
+    <div class="card-custom">
+      <div class="placeholder-image">
+        <img src="STATIONARE/Turqoise minimal stationary.jpg" alt="Plywood Image" class="w-100 h-100" />
+       
+      </div>
+      
+      <a href="/STATIONA-RE/FinalCodeFolder/STATIONARE/PRODUCTPAGE.html" style="text-decoration: none;"><div class="card-text" >Book Set</div></a>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="justify-content-center align-items-center" style="display: inline-block;">
+    <div class="card-custom">
+      <div class="placeholder-image">
+        <img src="Images/styrofoam.jpg" alt="Styrofoam Image" class="w-100 h-100" />
+        
+      </div>
+      <a href="/STATIONA-RE/FinalCodeFolder/vridhi folder/STATIONARE/PRODUCTPAGE.html" style="text-decoration: none;"><div class="card-text" >Styrofoam</div></a>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="justify-content-center align-items-center" style="display: inline-block;">
+    <div class="card-custom">
+      <div class="placeholder-image">
+        <img src="Images/fabric.jpg" alt="Satin Image" class="w-100 h-100" />
+        
+      </div>
+      <a href="/STATIONA-RE/FinalCodeFolder/vridhi folder/STATIONARE/PRODUCTPAGE.html" style="text-decoration: none;"><div class="card-text" >Satin</div></a>
+    </div>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="justify-content-center align-items-center" style="display: inline-block;">
+    <div class="card-custom">
+      <div class="placeholder-image">
+        <img src="Images/wire.jpg" alt="Metal Wire Image" class="w-100 h-100" />
+        
+      </div>
+      <a href="/STATIONA-RE/FinalCodeFolder/vridhi folder/STATIONARE/PRODUCTPAGE.html" style="text-decoration: none;"><div class="card-text" >Metal Wire</div></a>
+    </div>
+  </div>
+
+  <!-- Card 5 -->
+  <div class="justify-content-center align-items-center" style="display: inline-block;">
+    <div class="card-custom">
+      <div class="placeholder-image">
+        <img src="Images/cotton.jpg" alt="Cotton Cloth Image" class="w-100 h-100" />
+        
+      </div>
+      <a href="/STATIONA-RE/FinalCodeFolder/vridhi folder/STATIONARE/PRODUCTPAGE.html" style="text-decoration: none;"><div class="card-text" >Cotton Cloth</div></a>
+    </div>
+  </div>
+
+  <!-- Card 6 -->
+  <div class="justify-content-center align-items-center" style="display: inline-block;">
+    <div class="card-custom">
+      <div class="placeholder-image">
+        <img src="Images/brushPen.jpg" alt="Brush Pens Image" class="w-100 h-100" />
+        
+      </div>
+      <a href="/STATIONA-RE/FinalCodeFolder/vridhi folder/STATIONARE/PRODUCTPAGE.html" style="text-decoration: none;"><div class="card-text" >Brush Pens</div></a>
+    </div>
+  </div>
+</div>
+
+<!-- Bottom Navigation -->
+<div class="bottom-nav">
+  <div class="nav-item">
+      <a href="productListing1.html"><i class="fas fa-home"></i></a>
+      <span>Home</span>
+  </div>
+  <div class="nav-item">
+      <a href="/STATIONA-RE/FinalCodeFolder/ChatPage.html"><i class="fas fa-comments"></i></a>
+      <span>Chat</span>
+  </div>
+  <div class="nav-item">
+      <div class="sell-button">
+          <a href="/STATIONA-RE/FinalCodeFolder/shydanda/include details.html"><i class="fas fa-plus"></i></a>
+      </div>
+      <span>Sell</span>
+  </div>
+  <div class="nav-item">
+     <a href="/STATIONA-RE/FinalCodeFolder/STATIONARE/PRODUCTPAGE.html"> <i class="fas fa-box"></i></a>
+      <span>Products</span>
+  </div>
+  <div class="nav-item">
+      <a href="/STATIONA-RE/FinalCodeFolder/profile.html"><i class="fas fa-user"></i></a>
+      <span>Profile</span>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

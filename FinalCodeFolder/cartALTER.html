@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Layout App</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+    rel="stylesheet"/>
+
+    <style>
+
+
+
+
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .search-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      background-color: #056270;
+      box-shadow: 0 2px 4px rgba(151, 106, 106, 0.1);
+      position: fixed; /* Makes the bar sticky */
+      top: 0; /* Positions it at the top */
+      left: 0;
+      width: 100%; /* Ensures it spans the full width */
+      z-index: 1000; /* Keeps it above other elements */
+    }
+
+    .search-input {
+      display: flex;
+      align-items: center;
+      background-color: #e5e7eb;
+      border-radius: 9999px;
+      padding: 8px 16px;
+      width: 90%;
+      max-width: 200px;
+    }
+
+    .search-input input {
+      background: transparent;
+      border: none;
+      outline: none;
+      margin-left: 8px;
+      width: 100%;
+    }
+
+    .icons {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      color: white;
+    }
+
+    .icons a{
+      color: white;
+    }
+
+    body {
+      padding-top: 40px; /* Ensures content doesn't hide under the nav */
+    }
+
+
+    .product-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      align-items: center;
+      padding: 5px;
+      max-width: 400px;
+      margin: auto;
+    }
+
+    .image-placeholder {
+      width: 150px;
+      height: 150px;
+      border: 2px solid #056270;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #e0e0e0;
+      overflow: hidden; /* Ensures image stays within bounds */
+      
+    }
+
+    .image-placeholder img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensures the image fills the container */
+    }
+
+    .product-info {
+      display: flex;
+      flex-direction: column;
+      
+    }
+
+    .price-label {
+      display: inline-block;
+      padding: 5px 5px;
+      border: 1px solid #056270;
+      border-radius: 5px;
+      width: fit-content;
+      margin: 0px 0;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .button-group .btn {
+      width: 120px;
+    }
+    .bottom-nav {
+      background-color: white;
+      box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      display: flex;
+      justify-content: space-between ;
+      align-items: center;
+      position: fixed; 
+      bottom: 0; 
+      left: 0;
+      width: 100%; 
+      z-index: 1000; 
+    }
+
+    .nav-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .nav-item i {
+      color:#056270;
+    }
+
+    .nav-item span {
+      font-size: 12px;
+      color: #000000;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .sell-button i {
+      font-size: 17px;
+      color:#3ea7b8 ;
+    }
+
+
+    body {
+      padding-bottom: 70px; /* Prevents content from being hidden under the nav */
+    }
+
+
+
+    </style>
+</head>
+<body>
+
+
+  <!-- Search Bar and Icons --> 
+<div class="search-bar">
+  <div class="search-input">
+    <i class="fas fa-search text-gray"></i>
+    <input type="text" placeholder="Search Products" />
+  </div>
+  <div class="icons">
+    <a href="/STATIONA-RE/FinalCodeFolder/FinalCodeFolder/Notification.html"><i class="fas fa-bell text-gray"></i></a>
+    <i class="fas fa-shopping-cart text-gray"></i>
+  </div>
+</div>
+
+<!-- container 1 -->
+<div class="container mt-5">
+  <div class="product-container">
+    <!-- Image Placeholder -->
+    <div class="image-placeholder">
+      <img src="Images/styrofoam.jpg" alt="Product Image">
+    </div>
+
+    <!-- Product Information -->
+    <div class="product-info">
+      <p>Styrofoam</p>
+      <span class="price-label">Rs. 150</span> <br>
+      <a href="" style="text-decoration: none;"><p style="font-size: small;">View Details</p></a>
+    </div>
+  </div>
+
+  <!-- Buttons -->
+  <div class="button-group mt-4">
+    <button class="btn" style="background-color: #3ea7b8; color: #ffffff;">Compare</button>
+    <button class="btn" style="background-color: #056270; color: #ffffff;">Delete</button>
+  </div>
+</div>
+
+<!-- container 2 -->
+
+<!-- container 1 -->
+<div class="container mt-5">
+  <div class="product-container">
+    <!-- Image Placeholder -->
+    <div class="image-placeholder">
+      <img src="Images/brown-sal-wood.jpg" alt="Product Image">
+    </div>
+
+    <!-- Product Information -->
+    <div class="product-info">
+      <p>Pinewood</p>
+      <span class="price-label">Rs. 100</span> <br>
+      <a href="" style="text-decoration: none;"><p style="font-size: small;">View Details</p></a>
+    </div>
+  </div>
+
+  <!-- Buttons -->
+  <div class="button-group mt-4">
+    <button class="btn" style="background-color: #3ea7b8; color: #ffffff;">Compare</button>
+    <button class="btn" style="background-color:#056270; color: #ffffff;">Delete</button>
+  </div>
+</div>
+
+<!-- third card -->
+<!-- container 1 -->
+<div class="container mt-5">
+  <div class="product-container">
+    <!-- Image Placeholder -->
+    <div class="image-placeholder">
+      <img src="Images/fabric.jpg" alt="Product Image">
+    </div>
+
+    <!-- Product Information -->
+    <div class="product-info">
+      <p>1 metre Satin</p>
+      <span class="price-label">Rs. 150</span> <br>
+      <a href="" style="text-decoration: none;"><p style="font-size: small;">View Details</p></a>
+    </div>
+  </div>
+
+  <!-- Buttons -->
+  <div class="button-group mt-4">
+    <button class="btn" style="background-color: #3ea7b8; color: #ffffff;">Compare</button>
+    <button class="btn" style="background-color: #056270; color: #ffffff;">Delete</button>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- Bottom Navigation -->
+<div class="bottom-nav">
+  <div class="nav-item">
+    <a href="productListing1.html"><i class="fas fa-home" style="padding-bottom: 9px;"></i></a>
+    <span>Home</span>
+  </div>
+  <div class="nav-item">
+    <a href="/STATIONA-RE/FinalCodeFolder/ChatPage.html"><i class="fas fa-comments" style="padding-bottom: 9px;"></i></a>
+    <span>Chat</span>
+  </div>
+  <div class="nav-item">
+    <div class="sell-button">
+     <a href="/STATIONA-RE/FinalCodeFolder/shydanda/include details.html"> <i class="fas fa-plus" style="color: #3ea7b8;"></i></a>
+    </div>
+    <span>Sell</span>
+  </div>
+  <div class="nav-item">
+   <a href="/STATIONA-RE/FinalCodeFolder/vridhi folder/STATIONARE/PRODUCTPAGE.html"> <i class="fas fa-box" style="padding-bottom: 9px;"></i></a>
+    <span>Products</span>
+  </div>
+  <div class="nav-item">
+    <a href="profile.html"><i class="fas fa-user" style="padding-bottom: 9px;"></i></a>
+    <span>Profile</span>
+  </div>
+</div>
+
+
+<!-- Bootstrap JS (Optional) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+</body>
+</html>
+
